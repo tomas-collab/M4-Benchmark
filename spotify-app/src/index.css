@@ -11,3 +11,382 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.spotify-logo-text {
+  width: 131px;
+  height: 40px;
+  fill: white;
+}
+
+.side-bar {
+  width: 236px;
+  background-color: black;
+  position: fixed;
+  z-index: 1021;
+}
+
+.col-sidebar {
+  padding-right: 0px !important;
+}
+h6 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.put-color {
+  color: rgba(255, 255, 255, 0.5);
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.put-color:hover h6 {
+  color: white;
+  cursor: pointer;
+}
+.put-color:hover svg {
+  fill: white;
+  cursor: pointer;
+}
+.put-color:hover #library-icon {
+  fill: white;
+  cursor: pointer;
+}
+#library-icon {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.search:hover,
+.home:hover,
+.library:hover,
+.liked:hover,
+.create:hover {
+  color: white;
+}
+
+.btn-create {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.plus-btn {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background-color: #b6b6b6;
+  padding: 0;
+  margin: auto;
+}
+
+.plus-btn::before {
+  content: "";
+  position: absolute;
+  width: 0.1rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: black;
+}
+.plus-btn::after {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: black;
+}
+
+.liked-songs {
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+  background-image: linear-gradient(
+    135deg,
+    rgb(69, 10, 245),
+    rgb(196, 239, 217)
+  );
+  width: 22px;
+  height: 22px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid rgb(43, 43, 43) !important;
+}
+
+.list-unstyled {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.color-svg {
+  color: gray;
+  fill: gray;
+  stroke: gray;
+}
+
+.under-upgrade {
+  position: absolute;
+  transform: translateX(-25px);
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 0px;
+}
+
+.under-upgrade:hover .photo-play-two {
+  opacity: 1;
+  transform: translateY(10px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.under-premium {
+  width: 237px;
+}
+
+.photo-play-two {
+  position: absolute;
+  bottom: 185px;
+  right: -50px;
+  width: 28px;
+  height: 28px;
+  font-size: x-large;
+  opacity: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: all 0.4s ease;
+}
+
+.photo-play-two:hover {
+  opacity: 1;
+  transform: translateY(10px);
+  background-color: rgba(0, 0, 0, 1);
+}
+.under-upgrade:hover .photo-play-two {
+  opacity: 1;
+  transform: translateY(10px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  position: fixed;
+  bottom: 90px;
+  background-color: black;
+}
+
+.upgrade-premium {
+  margin-bottom: 30px;
+}
+
+.bg-color {
+  background-color: transparent !important;
+  padding-left: 105px !important;
+  padding-right: 30px !important;
+  transition: all 1s ease-in;
+}
+.bg-color.active {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+
+.nav-bar {
+  padding-right: 0px !important;
+  padding-left: 25px !important;
+}
+
+.button-nav-left {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  padding-left: 2px;
+  cursor: pointer;
+}
+.button-nav-right {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  padding-left: 3px;
+  cursor: pointer;
+}
+
+.arrows-left {
+  vertical-align: top;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+.arrows-right {
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+.avatar-nav {
+  position: relative;
+  background-color: black;
+  height: 30px;
+  width: 150px;
+  border-radius: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.img-avatar {
+  width: 25px;
+  height: 25px;
+}
+
+.account-avatar {
+  position: absolute;
+  pointer-events: initial;
+  background-color: #252525;
+  border-radius: 3px;
+  transform: translateY(90px);
+  right: 0px;
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.menu-avatar {
+  flex-direction: column;
+  width: 180px;
+  justify-content: space-between;
+  height: 140px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+.menu-avatar > div:hover {
+  background-color: #3e3e3e;
+}
+
+.hide-over {
+  overflow: hidden;
+}
+
+.btw-menu-avatar {
+  justify-content: space-between;
+}
+
+.a-changes-menu {
+  color: white;
+}
+
+span {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.svg-color {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.bottom-bar {
+  position: fixed;
+  height: 110px;
+  width: 100%;
+  bottom: 0px;
+  background-color: rgb(18, 18, 18);
+  z-index: 1022;
+}
+
+.row-bottom {
+  margin-left: 1px;
+}
+.img-nav-bottom {
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 0px !important;
+  width: 250px !important;
+}
+
+.img-nav-bottom:hover .photo-play {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.img-nav-bottom:hover {
+  cursor: pointer;
+}
+.card-img-bottom {
+  min-width: 70px;
+  min-height: 50px;
+}
+
+.photo-play {
+  position: absolute;
+  bottom: 35px;
+  right: 1px;
+  width: 28px;
+  height: 28px;
+  font-size: x-large;
+  opacity: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: all 0.4s ease;
+}
+
+.photo-play:hover {
+  opacity: 1;
+  transform: translateY(10px);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.direction-bar {
+  flex-direction: column;
+  position: relative;
+}
+
+.h6-bottom {
+  color: white;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.p-bottom {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #b6b6b6;
+  font-size: 12px;
+}
+
+.window-btn-bottom {
+  padding-left: 0px;
+}
+
+.queue-btn {
+  padding-top: 20px;
+  fill: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.play-bottom {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+.margin-volume {
+  margin-top: 43px;
+}
+
+.col-volume {
+  justify-content: flex-end !important;
+}
+
+.home-page {
+  margin-top: 40px;
+  margin-bottom: 110px;
+  padding-right: 50px !important;
+  padding-left: 115px !important;
+}
+
+.categories {
+  padding-left: 35px !important;
+}
